@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastrar Funcionário - FIAP</title>
+        <link rel="stylesheet" href="style/config.css">
+
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">FIAP</a>
+            <ul>
+                <li><a href="#" class="active">Cadastro</a></li>
+                <li><a href="ControleFiap?flag=listar">Lista</a></li>
+            </ul>
+        </header>
+
+        <section id="registration">
+            <h2 id="text">Cadastrar Funcionário</h2>
+            <form method="POST" action="ControleFiap?flag=cadastrar" class="registration-form">
+                <label for="matricula">Matricula:</label>
+                <input type="text" name="matricula" id="matricula" maxlength="50" required>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" maxlength="50" required>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" maxlength="30" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" maxlength="11" required>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" name="cargo" id="cargo" maxlength="30" required>
+
+                <input type="submit" value="Salvar">
+            </form>
+        </section>
+
+    </body>
+</html>
+
+
